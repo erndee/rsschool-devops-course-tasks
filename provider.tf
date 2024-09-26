@@ -10,10 +10,10 @@ terraform {
   required_version = ">= 1.2.0"
 
   backend "s3" {
-    bucket         = var.tf-state-bucket
+    bucket         = "tf-state-rs-student"
     key            = "terraform.tfstate"
-    region         = var.aws-region
-    dynamodb_table = var.tf-lock-table
+    region         = "us-east-1"
+    dynamodb_table = "tf-lock-rs-student"
     encrypt        = true
   }
 }
