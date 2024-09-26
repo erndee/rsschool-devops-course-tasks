@@ -8,7 +8,7 @@ resource "aws_iam_role" "gh_actions_role" {
       {
         "Effect" : "Allow",
         "Principal" : {
-          "Federated" : "arn:aws:iam::123456123456:oidc-provider/token.actions.githubusercontent.com"
+          "Federated" : "arn:aws:iam::207567773688:oidc-provider/token.actions.githubusercontent.com"
         },
         "Action" : "sts:AssumeRoleWithWebIdentity",
         "Condition" : {
