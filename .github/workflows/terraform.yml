@@ -33,6 +33,9 @@ jobs:
         role-session-name: "tf_session"
         aws-region: ${{ vars.AWS_REGION }}
 
+    - name: Terraform Init
+      run: terraform init
+
     - name: Terraform Format
       run: terraform fmt -check
 
